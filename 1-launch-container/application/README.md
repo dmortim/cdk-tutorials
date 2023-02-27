@@ -2,28 +2,20 @@
 ```
 npm init
 npm i express winston sequelize body-parser
-npm i --save-dev typescript @types/express @types/node sqlite3
+npm i --save-dev typescript @types/express @types/node sqlite3 nodemon ts-node
 npx tsc --init
 ```
 
-# Required Env Vars
-```
-ENVIRONMENT = local | dev | test | prod
-PORT=3000 default: 3000
-
-# If connecting to remote DB (i.e. 'Environment' Env var is not set to local)
-DB_NAME=
-DB_HOST=
-DB_USER=
-DB_PORT=
-DB_PASSWORD=
-```
-
-
-# Run
+# Run locally
 
 ```
-npx tsc && node ./dist/server.js
+npm i
+export ENVIRONMENT=local
+export PORT=3000 
+```
+
+```
+npm run local
 ```
 
 
