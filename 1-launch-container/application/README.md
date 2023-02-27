@@ -1,7 +1,7 @@
 # Setup from scratch
 ```
 npm init
-npm i express winston sequelize body-parser
+npm i express winston sequelize body-parser supertest
 npm i --save-dev typescript @types/express @types/node sqlite3 nodemon ts-node
 npx tsc --init
 ```

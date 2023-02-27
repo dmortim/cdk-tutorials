@@ -1,9 +1,8 @@
 import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '.';
 
-class User extends Model {}
-
-User.init({
+class User extends Model {} 
+const userModel = {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -37,9 +36,12 @@ User.init({
       is: /^\+[1-9]\d{1,14}$/,
     }
   }
-}, {
+}
+
+User.init(userModel, {
   sequelize,
-  modelName: 'user'
+  modelName: 'User'
 });
+
 
 export default User;
