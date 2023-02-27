@@ -11,6 +11,7 @@ const db_port: number = parsePortEnvVar(process.env.DB_PORT, 3001);
 const environment: string = process.env.ENVIRONMENT || 'local';
 
 const config = {
+  version: 'v1',
   port: app_port,
   environment: environment,
   applicationName: 'my-express-app',
